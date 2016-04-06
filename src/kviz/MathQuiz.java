@@ -7,10 +7,9 @@ public class MathQuiz {
 		double suma = broj1 + broj2;
 		System.out.println("Unesite odgovor: ");
 		double odgovor = input.nextDouble();
-		if(odgovor == suma ){
-			System.out.println("Tacan odgovor: " + suma);
-		}
-		else {
+		if (odgovor == suma) {
+			System.out.println("Tacan odgovor: ");
+		} else {
 			System.out.println("Pogrijesili ste, tacan odgovor je: " + suma);
 		}
 
@@ -81,7 +80,7 @@ public class MathQuiz {
 		default:
 			break;
 		}
-	
+
 	}
 
 }
