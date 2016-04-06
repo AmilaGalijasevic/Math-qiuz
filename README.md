@@ -1,0 +1,1 @@
+# Ispis-karakteristika-fajla
