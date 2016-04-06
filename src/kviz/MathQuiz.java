@@ -28,8 +28,11 @@ public class MathQuiz {
 	}
 
 	public static double dijeljenje(double broj1, double broj2) {
-		return 0;
-
+		if(broj2>0){
+			return broj1 / broj2;
+		}else{
+			return 0;
+		}
 	}
 
 	public static double kvadriranje(double broj1, double broj2) {
