@@ -50,7 +50,20 @@ public class MathQuiz {
 		}
 
 	public static double dijeljenje(double broj1, double broj2) {
-		return 0;
+		java.util.Scanner input = new java.util.Scanner(System.in);
+		System.out.println("Koliko je " + broj1 + " / " + broj2);
+		double rezultat = broj1 / broj2;
+		System.out.println("Unesite odgovor: ");
+		double odgovor = input.nextDouble();
+		if (odgovor == rezultat) {
+			System.out.println("Tacan odgovor! \n");
+		} else {
+			System.out.println("Pogrijesili ste, tacan odgovor je: " + rezultat + " \n");
+		}
+		
+		return rezultat;
+		
+		
 
 	}
 
