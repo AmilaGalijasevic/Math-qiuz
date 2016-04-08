@@ -67,13 +67,37 @@ public class MathQuiz {
 
 	}
 
-	public static double kvadriranje(double broj1, double broj2) {
-		return 0;
+	public static double kvadriranje(double broj1) {
+		java.util.Scanner input = new java.util.Scanner(System.in);
+		System.out.println("Koliki je kvadrat broja "+broj1);
+		double kvadrat=broj1*broj1;
+		
+		double pokusaj=input.nextDouble();
+		
+		if (pokusaj==kvadrat) {
+			System.out.println("Tacan odgovor! \n");
+		}else {
+			System.out.println("Pogrijesili ste, tacan odgovor je: "+kvadrat);
+		}
+		
+		
+		return kvadrat;
 
 	}
 
-	public static double korjenovanje(double broj1, double broj2) {
-		return 0;
+	public static double korjenovanje(double broj1) {
+		java.util.Scanner input = new java.util.Scanner(System.in);
+		System.out.println("Koliki je korjen broja "+broj1);
+		double pokusaj=input.nextDouble();
+		double korjen=Math.sqrt(broj1);
+		
+		if (pokusaj==korjen) {
+			System.out.println("Tacan odgovor!");
+		}else {
+			System.out.println("Pogrijesili ste! Tacan odgovor je: "+korjen);
+		}
+		
+		return korjen;
 
 	}
 
@@ -110,12 +134,12 @@ public class MathQuiz {
 				break;
 			}
 			case 5: {
-				kvadriranje(broj1, broj2);
+				korjenovanje(broj1);
 				main(args);
 				break;
 			}
 			case 6: {
-				korjenovanje(broj1, broj2);
+				kvadriranje(broj1);
 				main(args);
 				break;
 			}
